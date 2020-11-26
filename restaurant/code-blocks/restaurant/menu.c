@@ -32,32 +32,32 @@ void menu( table tb[] ){
         switch(choice){
             case '0':
                 break;
-                
+
             case '1':
                 fprintf(stdout,"\t\tCalling the function to Order...\n");
                 order( tb );
                 break;
-                
+
             case '2':
                 fprintf(stdout,"\t\tCalling the function to Bill...\n");
                 bill( tb );
                 break;
-                
+
             case '3':
                 fprintf(stdout,"\t\tCalling the function to Data...\n");
-                
+
                 break;
-                
+
             case '4':
                 fprintf(stdout,"\t\tCalling the function to Sum...\n");
-                
+
                 break;
-                
+
             default:
                 fprintf(stdout,"\t\tWrong number.\n\n\t\tPlease enter a number BETWEEN 0 AND 3 !!!\n\n");
                 system("pause");
                 break;
-                
+
         }
     }while( choice!='0' );
     puts("");

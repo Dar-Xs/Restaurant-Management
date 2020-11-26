@@ -43,10 +43,10 @@ void log_in(void);
 void ptmenu(void);
 void menu( table tb[] );
 
-void ptmenu(void);
+void ptorder(void);
+void order( table tb[] );
 void new_order( table tb[] );
 void add_order( table tb[] , int ID );
-void order( table tb[] );
 
 void ptbill(void);
 void bill( table tb[] );

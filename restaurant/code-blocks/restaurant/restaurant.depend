@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1606416493 source:c:\users\darxs\documents\github\restaurant-management\restaurant\code-blocks\restaurant\log_in.c
+	"func.h"
+
+1606419882 c:\users\darxs\documents\github\restaurant-management\restaurant\code-blocks\restaurant\func.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1606419154 source:c:\users\darxs\documents\github\restaurant-management\restaurant\code-blocks\restaurant\main.c
+	"func.h"
+
+1606419832 source:c:\users\darxs\documents\github\restaurant-management\restaurant\code-blocks\restaurant\menu.c
+	"func.h"
+
+1606416493 source:c:\users\darxs\documents\github\restaurant-management\restaurant\code-blocks\restaurant\bill.c
+	"func.h"
+
