@@ -29,12 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED4D551E2570358100335147 /* func.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = func.h; sourceTree = "<group>"; };
 		EDD3286825700649007D61B1 /* restaurant */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = restaurant; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD3286B25700649007D61B1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		EDD32874257006B1007D61B1 /* menu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = menu.c; sourceTree = "<group>"; };
 		EDD3287B25700A2A007D61B1 /* order.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = order.c; sourceTree = "<group>"; };
 		EDD3288025701083007D61B1 /* log_in.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = log_in.c; sourceTree = "<group>"; };
-		EDD3288625701BA2007D61B1 /* func.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = func.h; path = ../../../../../.Trash/func.h; sourceTree = "<group>"; };
 		EDD3288925701F6C007D61B1 /* bill.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bill.c; sourceTree = "<group>"; };
 		EDD3288E25701FA0007D61B1 /* sum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sum.c; sourceTree = "<group>"; };
 		EDD3289225701FAD007D61B1 /* data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = data.c; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EDD3286B25700649007D61B1 /* main.c */,
-				EDD3288625701BA2007D61B1 /* func.h */,
+				ED4D551E2570358100335147 /* func.h */,
 				EDD3288025701083007D61B1 /* log_in.c */,
 				EDD32874257006B1007D61B1 /* menu.c */,
 				EDD3287B25700A2A007D61B1 /* order.c */,
