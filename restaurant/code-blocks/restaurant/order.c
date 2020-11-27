@@ -21,6 +21,43 @@ void ptorder(){
 }
 
 
+void order( table tb[] ){
+
+    char choice;
+    do{
+        system("cls");
+        ptorder();
+        fprintf(stdout,"\t\tPlease enter your choice:  ");
+        fflush(stdin);
+        scanf("%c",&choice);
+        switch(choice){
+            case '0':
+                break;
+
+            case '1':
+                fprintf(stdout,"\t\tPlease enter the table ID:");
+                int ID ;
+                fflush(stdin);
+                fscanf(stdin,"%d",&ID);
+                add_order( tb , ID );
+                break;
+
+            case '2':
+                fprintf(stdout,"\t\tCalling the function to creat a new Order...\n");
+                new_order( tb );
+                break;
+
+            default:
+                fprintf(stdout,"\t\tWrong number.\n\n\t\tPlease enter a number BETWEEN 0 AND 2 !!!\n\n");
+                system("pause");
+                break;
+        }
+    }while( choice!='0' );
+    puts("");
+    fprintf(stdout,"\t\tExiting...\n");
+    system("pause");
+}
+
 
 void new_order( table tb[] ){
     int fre[10]={-1,-1,-1,-1,-1,-1,-1,-1,-1,-1} ;
@@ -88,36 +125,4 @@ void new_order( table tb[] ){
 void add_order(  table tb[] , int ID ){
 
 }
-void order( table tb[] ){
-    char choice;
-    do{
-        system("cls");
-        ptorder();
-        fprintf(stdout,"\t\tPlease enter your choice:  ");
-        fflush(stdin);
-        scanf("%c",&choice);
-        switch(choice){
-            case '0':
-                break;
-            case '1':
-                fprintf(stdout,"\t\tPlease enter the table ID:");
-                int ID ;
-                fflush(stdin);
-                fscanf(stdin,"%d",&ID);
 
-                add_order( tb , ID );
-                break;
-            case '2':
-                fprintf(stdout,"\t\tCalling the function to creat a new Order...\n");
-                new_order( tb );
-                break;
-            default:
-                fprintf(stdout,"\t\tWrong number.\n\n\t\tPlease enter a number BETWEEN 0 AND 2 !!!\n\n");
-                system("pause");
-                break;
-        }
-    }while( choice!='0' );
-    puts("");
-    fprintf(stdout,"\t\tExiting...\n");
-    system("pause");
-}

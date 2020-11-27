@@ -5,12 +5,13 @@
 //  Created by DarXs微分 on 2020/11/26.
 //
 
-#ifndef func_h
-#define func_h
+#ifndef __func_h__
+#define __func_h__
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 
 
 struct Dish{
@@ -55,6 +56,8 @@ void bill_list( table tb[] , int ID );
 
 void sum(void);
 void data(void);
+
+
 
 
 #endif

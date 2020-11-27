@@ -20,7 +20,7 @@ int main(void) {
         fscanf(fp, "%d", &tb[i].room );
     }
 
-    //log_in();
+    log_in();
     menu( tb );
 
     printf("Hello, World!\n");

@@ -22,38 +22,36 @@ void ptbill(){
 void bill( table tb[] ){
     char choice;
     int ID ;
-    
+
     do{
         system("cls");
         ptbill();
-        fprintf(stdout,"\t\tPlease enter your choice:  ");
+        fprintf(stdout,"\n\t\tPlease enter your choice:  ");
         fflush(stdin);
         scanf("%c",&choice);
         switch(choice){
             case '0':
                 break;
-                
+
             case '1':
-                fprintf(stdout,"\t\tPlease enter the table ID:");
+                fprintf(stdout,"\n\t\tPlease enter the table ID:");
                 fflush(stdin);
                 fscanf(stdin,"%d",&ID);
-                
                 bill_table( tb , ID );
                 break;
-                
+
             case '2':
-                fprintf(stdout,"\t\tPlease enter the list ID:");
+                fprintf(stdout,"\n\t\tPlease enter the list ID:");
                 fflush(stdin);
                 fscanf(stdin,"%d",&ID);
-                
                 bill_list( tb , ID );
                 break;
-                
+
             default:
                 fprintf(stdout,"\t\tWrong number.\n\n\t\tPlease enter a number BETWEEN 0 AND 2 !!!\n\n");
                 system("pause");
                 break;
-                
+
         }
     }while( choice!='0' );
     puts("");
@@ -61,7 +59,7 @@ void bill( table tb[] ){
 }
 
 void bill_table( table tb[] , int ID ){
-    
+
 }
 
 void bill_list( table tb[] , int ID ){

@@ -26,7 +26,7 @@ void menu( table tb[] ){
     do{
         system("cls");
         ptmenu();
-        fprintf(stdout,"\t\tPlease enter your choice:  ");
+        fprintf(stdout,"\n\t\tPlease enter your choice:  ");
         fflush(stdin);
         scanf("%c",&choice);
         switch(choice){
@@ -34,22 +34,22 @@ void menu( table tb[] ){
                 break;
 
             case '1':
-                fprintf(stdout,"\t\tCalling the function to Order...\n");
+                fprintf(stdout,"\n\t\tCalling the function to Order...\n");
                 order( tb );
                 break;
 
             case '2':
-                fprintf(stdout,"\t\tCalling the function to Bill...\n");
+                fprintf(stdout,"\n\t\tCalling the function to Bill...\n");
                 bill( tb );
                 break;
 
             case '3':
-                fprintf(stdout,"\t\tCalling the function to Data...\n");
+                fprintf(stdout,"\n\t\tCalling the function to Data...\n");
 
                 break;
 
             case '4':
-                fprintf(stdout,"\t\tCalling the function to Sum...\n");
+                fprintf(stdout,"\n\t\tCalling the function to Sum...\n");
 
                 break;
 
