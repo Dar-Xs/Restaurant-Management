@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="bill.c" open="1" top="0" tabpos="8">
-		<Cursor position="868" topLine="11" />
+	<File name="File_processing.c" open="1" top="0" tabpos="9">
+		<Cursor position="817" topLine="26" />
 	</File>
-	<File name="data.c" open="1" top="0" tabpos="7">
-		<Cursor position="104" topLine="0" />
+	<File name="bill.c" open="1" top="0" tabpos="5">
+		<Cursor position="2499" topLine="75" />
+	</File>
+	<File name="data.c" open="1" top="1" tabpos="8">
+		<Cursor position="198" topLine="9" />
 	</File>
 	<File name="func.h" open="1" top="0" tabpos="3">
-		<Cursor position="436" topLine="15" />
+		<Cursor position="230" topLine="0" />
 	</File>
-	<File name="log_in.c" open="1" top="0" tabpos="6">
-		<Cursor position="0" topLine="11" />
+	<File name="log_in.c" open="1" top="0" tabpos="4">
+		<Cursor position="278" topLine="10" />
 	</File>
 	<File name="main.c" open="1" top="0" tabpos="1">
-		<Cursor position="164" topLine="0" />
+		<Cursor position="203" topLine="0" />
 	</File>
-	<File name="menu.c" open="1" top="1" tabpos="2">
-		<Cursor position="906" topLine="13" />
+	<File name="menu.c" open="1" top="0" tabpos="2">
+		<Cursor position="1423" topLine="17" />
 	</File>
-	<File name="order.c" open="1" top="0" tabpos="4">
-		<Cursor position="763" topLine="15" />
+	<File name="order.c" open="1" top="0" tabpos="6">
+		<Cursor position="6078" topLine="190" />
 	</File>
-	<File name="sum.c" open="1" top="0" tabpos="5">
-		<Cursor position="0" topLine="0" />
+	<File name="sum.c" open="1" top="0" tabpos="7">
+		<Cursor position="617" topLine="7" />
 	</File>
 </CodeBlocks_layout_file>

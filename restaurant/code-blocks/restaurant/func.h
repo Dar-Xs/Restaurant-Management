@@ -2,7 +2,7 @@
 //  menu.h
 //  restaurant
 //
-//  Created by DarXså¾®åˆ† on 2020/11/26.
+//  Created by DarXsÎ¢·Ö on 2020/11/26.
 //
 
 #ifndef __func_h__
@@ -11,22 +11,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
+#include <windows.h>
 
 
 
 struct Dish{
     int ID ;
-    char name[10] ;
+    char name[40] ;
     float price ;
     struct Dish *next ;
 };
 
 struct List{
     int ID ;
-    unsigned long long time_start ;
-    unsigned long long time_end ;
+    time_t time_start ;
+    time_t time_end ;
     float price ;
-    struct Dish *dish ;
+    struct Dish *dishes ;
+    struct Dish *dish_end ;
 };
 
 struct Table{
@@ -39,25 +42,27 @@ typedef struct Dish dish ;
 typedef struct List list ;
 typedef struct Table table ;
 
+void ptdish( dish *head );
+dish *mkdish(void);
+void loadtable( table tb[] );
+
 void log_in(void);
 
 void ptmenu(void);
-void menu( table tb[] );
+void menu( table tb[] , dish *head );
 
 void ptorder(void);
-void order( table tb[] );
-void new_order( table tb[] );
-void add_order( table tb[] , int ID );
+void order( table tb[] , dish *head );
+void new_order( table tb[] , dish *head );
+void add_order( table tb[] , dish *head );
+void adddish( dish *head , list *plist ) ;
 
-void ptbill(void);
 void bill( table tb[] );
-void bill_table( table tb[] , int ID );
-void bill_list( table tb[] , int ID );
+void freedish( dish *head );
 
-void sum(void);
+void sum( dish *head );
+void ptblocks( int t );
 void data(void);
-
-
 
 
 #endif

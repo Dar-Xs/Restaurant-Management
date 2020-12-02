@@ -21,8 +21,9 @@ void ptmenu(){
     fprintf(stdout,"\t\t************************************\n");
 }
 
-void menu( table tb[] ){
+void menu( table tb[] , dish *head ){
     char choice;
+    int i , t=0 ;
     do{
         system("cls");
         ptmenu();
@@ -31,11 +32,21 @@ void menu( table tb[] ){
         scanf("%c",&choice);
         switch(choice){
             case '0':
+                for( i=0 ; i<10 ; i++ ){
+                    if( tb[i].use == 1 ){
+                        fprintf(stdout,"\n\t\ttable[%d] didn\'t bill yet !\n", i );
+                        t++;
+                    }
+                }
+                if(t!=0){
+                    choice = '1' ;
+                    t = 0 ;
+                    system("pause");
+                }
                 break;
 
             case '1':
-                fprintf(stdout,"\n\t\tCalling the function to Order...\n");
-                order( tb );
+                order( tb , head );
                 break;
 
             case '2':
@@ -45,12 +56,12 @@ void menu( table tb[] ){
 
             case '3':
                 fprintf(stdout,"\n\t\tCalling the function to Data...\n");
-
+                data();
                 break;
 
             case '4':
                 fprintf(stdout,"\n\t\tCalling the function to Sum...\n");
-
+                sum( head );
                 break;
 
             default:

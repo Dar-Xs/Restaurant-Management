@@ -9,21 +9,15 @@
 
 int main(void) {
 
+    SetConsoleOutputCP(437);
+
     table tb[10]={0};
-    dish cai;
+    loadtable( tb );
 
-    FILE *fp;
-    fp = fopen("table.txt", "r");
+    dish *caihead = mkdish();
 
-    int i ;
-    for( i=0 ; i<=9 ; i++ ){
-        fscanf(fp, "%d", &tb[i].room );
-    }
+    menu( tb , caihead );
 
-    log_in();
-    menu( tb );
-
-    printf("Hello, World!\n");
     return 0;
 }
 

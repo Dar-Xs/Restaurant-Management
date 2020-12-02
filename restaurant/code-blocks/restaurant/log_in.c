@@ -36,7 +36,7 @@ void log_in(){
         fprintf(stdout,"\t\t|                                  |\n");
         fprintf(stdout,"\t\t************************************\n");
 
-        if( strcmp(a,ai)!=0 && strcmp(p,pi)!=0 ){
+        if( strcmp(a,ai)!=0 || strcmp(p,pi)!=0 ){
             system("cls");
             fprintf(stdout,"\t\t************************************\n");
             fprintf(stdout,"\t\t|     Wrong passward               |\n");
